@@ -14,9 +14,6 @@ class DBHelper {
         // Get a location using getDatabasesPath
         var databasesPath = await getDatabasesPath() + 'taskManagerDB.db';
 
-        // Delete the database
-        //await deleteDatabase(databasesPath);
-
         // open the database
         _database = await openDatabase(databasesPath, version: _version, onCreate: (Database db, int version) async {
           // When creating the db, create the table
@@ -34,7 +31,7 @@ class DBHelper {
               ')');
         });
       } catch (e) {
-        print(e);
+        throw Exception(e);
       }
     }
   }

@@ -26,7 +26,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final TaskController _taskController = Get.put(TaskController());
   DateTime _selectedDate = DateTime.now();
-  NotifyHelper _notifyHelper = NotifyHelper();
+  final NotifyHelper _notifyHelper = NotifyHelper();
 
   @override
   void initState() {

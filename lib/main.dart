@@ -8,7 +8,6 @@ import 'package:task_manager/ui/theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // NotifyHelper().initializeNotification();
   await DBHelper.initDB();
   await GetStorage.init();
   runApp(const MyApp());

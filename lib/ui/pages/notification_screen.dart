@@ -57,9 +57,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
           ),
           Expanded(
               child: Container(
-            margin: const EdgeInsets.symmetric(
-              horizontal: 30,vertical: 20
-            ),
+            margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
             decoration: BoxDecoration(color: primaryClr, borderRadius: BorderRadius.circular(30)),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(30),
